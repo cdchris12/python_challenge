@@ -19,7 +19,7 @@ mv iprep_conf.py.CHANGEME iprep_conf.py
 Your API keys need to be formatted as "<api_key>:<api_secret>". For
 example, if your key was "123", and your secret was "qwerty", your
 configuration file should read as follows:
-```
+```python
 #XForce exchange
 # via https://exchange.xforce.ibmcloud.com/new
 # Settings -> API key
