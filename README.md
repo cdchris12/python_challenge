@@ -12,7 +12,7 @@ Before you can use this script to make calls to the X-Force
 Exchange API, you must create a valid configuration file. In order to
 do that, you'll need to change the name of "iprep_conf.py.CHANGEME"
 to "iprep_conf.py" and add your own personal API keys to the "xfex_cred"
-value.
+value. To do this on a *NIX machine, the command would be:
 ```
 mv iprep_conf.py.CHANGEME iprep_conf.py
 ```
