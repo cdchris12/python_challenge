@@ -28,8 +28,7 @@ authstring = base64.encodestring(IC.xfex_cred).replace('\n','')
 yesterday = datetime.now() - timedelta(days=1)
 YEST = yesterday.strftime('20%y-%m-%dT00:00:00Z')
 
-headers = {
-    "Authorization": "Basic %s " % authstring,
+headers = {"Authorization": "Basic %s " % authstring,
     "Accept": "application/json",
     'User-Agent': 'Mozilla 5.0'}
 
@@ -57,13 +56,15 @@ def getip(ip):
 
 def extractIP(text):
     ip = re.compile(r"\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b")
-    return ip.findall(text)[0]
+    res = ip.findall(text)
+    if len(res): return res[0]
+    else: return False
 # End def
 
 if __name__ == "__main__":
     from optparse import OptionParser
     parser = OptionParser()
-    parser.add_option("-i", "--ip", dest="ip" , default=None, help="get IP intel", metavar="IP_Address")
+    parser.add_option("-i", "--ip", dest="ip" , default=None, help="Get IP intel", metavar="IP_Address")
 
     (options, args) = parser.parse_args()
 
@@ -74,9 +75,11 @@ if __name__ == "__main__":
             sys.exit(1)
         else:
             ip_res = getip(res)
+            print json.dumps(ip_res, indent=4, sort_keys=True)
+            sys.exit(0)
         # End if/else block
     else:
-        "Please specify an IP address to retrieve information for."
+        print "Please specify an IP address to retrieve information for."
         sys.exit(1)
     # End if/else block
 # End if
