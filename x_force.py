@@ -14,7 +14,14 @@ import base64
 BASEurl = "https://api.xforce.ibmcloud.com/"
 
 sys.path.append('./')
-import iprep_conf as IC
+
+try:
+    import iprep_conf as IC
+    assert IC.xfex_cred != "key:secret"
+except:
+    print "Please create a config file which contains a valid set of API credentials."
+    sys.exit(1)
+# End try/except block
 
 authstring = base64.encodestring(IC.xfex_cred).replace('\n','')
 
