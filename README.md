@@ -27,6 +27,6 @@ xfex_cred = "123:qwerty"
 ```
 
 # Acknowledgements
-This project contains code from
-https://github.com/johestephan/CTI-Toolbox , used per the licensing
-terms.
+This project uses code from
+[The CTI-Toolbox Project](https://github.com/johestephan/CTI-Toolbox),
+used per the licensing terms.
