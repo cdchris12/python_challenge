@@ -34,12 +34,17 @@ python interpreter and passing the name of this script as a variable
 ## Arguments
 This script accepts the following arguments:
 1. `-i <IP_Address>` or `--ip <IP_Address>`
+   - The IP address you want to use to query the Xforce API
 2. `-o <File_Name>` or `--outfile <File_Name>`
+   - The file name you'd like the program to save the output file as.
 
 ## Example Commands
-`./x_force.py -i 8.8.8.8`
+`./x_force.py -i 8.8.8.8` to query the API for the `8.8.8.8` IP address
+and print the results to the console.
 
-`python x_force.py --ip 8.8.4.4 -o results.txt`
+`python x_force.py --ip 8.8.4.4 -o results.json` to query the API for
+the `8.8.4.4` IP address and save the results in JSON format as
+`results.json`.
 
 # Acknowledgements
 This project uses code from
