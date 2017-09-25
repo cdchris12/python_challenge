@@ -38,6 +38,7 @@ This script accepts the following arguments:
 
 ## Example Commands
 `./x_force.py -i 8.8.8.8`
+
 `python x_force.py -i 8.8.4.4 -s results.txt`
 
 # Acknowledgements
