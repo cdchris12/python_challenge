@@ -33,8 +33,8 @@ python interpreter and passing the name of this script as a variable
 
 ## Arguments
 This script accepts the following arguments:
- 1.) `-i <IP_Address>` or `--ip <IP_Address>`
- 2.) `-s <File_Name>` or `--saveas <File_Name>`
+1. `-i <IP_Address>` or `--ip <IP_Address>`
+2. `-s <File_Name>` or `--saveas <File_Name>`
 
 ## Example Commands
 `./x_force.py -i 8.8.8.8`
