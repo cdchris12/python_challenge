@@ -26,6 +26,20 @@ configuration file should read as follows:
 xfex_cred = "123:qwerty"
 ```
 
+# Usage
+This script can be called directly, `./x_force.py`, or by launching the
+python interpreter and passing the name of this script as a variable
+`python x_force.py`
+
+## Arguments
+This script accepts the following arguments:
+ 1.) `-i <IP_Address>` or `--ip <IP_Address>`
+ 2.) `-s <File_Name>` or `--saveas <File_Name>`
+
+## Example Commands
+`./x_force.py -i 8.8.8.8`
+`python x_force.py -i 8.8.4.4 -s results.txt`
+
 # Acknowledgements
 This project uses code from
 [The CTI-Toolbox Project](https://github.com/johestephan/CTI-Toolbox),
