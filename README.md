@@ -4,8 +4,8 @@ readable results about a specified IP address.
 
 # Setup
 ## Dependencies
-In order to use this script, no additional package installation is
-required.
+No additional package installation is required in order to use this
+script.
 
 ## Configuration File
 Before you can use this script to make calls to the X-Force
